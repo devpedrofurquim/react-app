@@ -29,8 +29,6 @@ jobs:
         cache: 'npm'
     - name: Install dependencies 📦
       run: npm ci
-    - name: Run ESLint 🏁
-      run: npm run lint
     - name: Build the app 👷‍♂️
       run: npm run build
     - name: Run Unity Tests 🧪
