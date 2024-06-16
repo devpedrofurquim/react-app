@@ -28,23 +28,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies 📦
-      run: |
-        cd my-app
-        npm ci
+      run: npm ci
     - name: Run ESLint 🏁
-      run: |
-        cd my-app
-        npm run lint
+      run: npm run lint
     - name: Build the app 👷‍♂️
-      run: |
-        cd my-app
-        npm run build
+      run: npm run build
     - name: Run Unity Tests 🧪
-      run: |
-        cd my-app
-        npm run test
+      run: npm run test
     - name: Start the app 🪁
-      run: |
-        cd my-app
-        npm start & 
+      run: npm start & 
         npx wait-on http://localhost:3000 --timeout 60000
