@@ -17,12 +17,19 @@
 
 .buttons-div button {
   background-color: black;
+  color: white;
   text-decoration: none;
   text-align: center;
   padding: 1rem;
   border-radius: 10px;
   border-style: none;
   flex: 100%;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.buttons-div button:hover {
+  background-color: darksalmon;
 }
 
 .buttons-div button a {
