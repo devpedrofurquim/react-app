@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://devpedrofurquim.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid="access-link"
-        >
-          Acess my Website
-        </a>
-      </header>
+      <h1>Hello World</h1>
+      <p>Let's learn more about tests in React!</p>
+      <div className='buttons-div'>
+        <button>
+          <a href='https://github.com/devpedrofurquim/react-app'>Acess this project repository</a>
+        </button>
+        <button>
+          <a href='https://devpedrofurquim.github.io'>Acess my website</a>
+        </button>
+      </div>
     </div>
   );
 }
