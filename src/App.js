@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import Task from './components/Task';
 
 function App() {
   const [message, setMessage] = useState('Let\'s learn more about tests in React');
